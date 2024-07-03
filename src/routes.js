@@ -16,23 +16,14 @@
 
 */
 import Dashboard from "views/Dashboard.js";
-import UserProfile from "views/UserProfile.js";
-import TableList from "views/TableList.js";
-import Typography from "views/Typography.js";
-import Icons from "views/Icons.js";
-import Maps from "views/Maps.js";
-import Notifications from "views/Notifications.js";
-import Upgrade from "views/Upgrade.js";
+import Divisi from "views/Divisi";
+import Login from "views/Login";
+import Pegawai from "views/Pegawai";
+import SuratKeluarMasuk from "views/SuratKeluarMasuk";
+import SuratTugas from "views/SuratTugas";
+import Users from "views/Users";
 
 const dashboardRoutes = [
-  {
-    upgrade: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "nc-icon nc-alien-33",
-    component: Upgrade,
-    layout: "/admin"
-  },
   {
     path: "/dashboard",
     name: "Dashboard",
@@ -41,47 +32,47 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/user",
-    name: "User Profile",
-    icon: "nc-icon nc-circle-09",
-    component: UserProfile,
+    path: "/login",
+    name: "Login",
+    icon: "nc-icon nc-chart-pie-35",
+    component: Login,
     layout: "/admin"
   },
   {
-    path: "/table",
-    name: "Table List",
-    icon: "nc-icon nc-notes",
-    component: TableList,
+    path: "/users",
+    name: "Users",
+    icon: "nc-icon nc-single-02",
+    component: Users,
     layout: "/admin"
   },
   {
-    path: "/typography",
-    name: "Typography",
-    icon: "nc-icon nc-paper-2",
-    component: Typography,
+    path: "/divisi",
+    name: "Divisi",
+    icon: "nc-icon nc-layers-3",
+    component: Divisi,
     layout: "/admin"
   },
   {
-    path: "/icons",
-    name: "Icons",
-    icon: "nc-icon nc-atom",
-    component: Icons,
+    path: "/pegawai",
+    name: "Pegawai",
+    icon: "nc-icon nc-satisfied",
+    component: Pegawai,
     layout: "/admin"
   },
   {
-    path: "/maps",
-    name: "Maps",
-    icon: "nc-icon nc-pin-3",
-    component: Maps,
+    path: "/surat-tugas",
+    name: "Surat Tugas",
+    icon: "nc-icon nc-email-83",
+    component: SuratTugas,
     layout: "/admin"
   },
   {
-    path: "/notifications",
-    name: "Notifications",
-    icon: "nc-icon nc-bell-55",
-    component: Notifications,
+    path: "/surat-keluar-masuk",
+    name: "Surat Keluar Masuk",
+    icon: "nc-icon nc-bullet-list-67",
+    component: SuratKeluarMasuk,
     layout: "/admin"
-  }
+  },
 ];
 
 export default dashboardRoutes;
